@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic);
+html {
+  font-size: 112.5%;
+}
+
+body {
+  background-color: #dcdace;
+  color: #2a2c21;
+  font-family: "old standard tt", georgia, "times new roman", serif;
+  line-height: 1.5;
+  padding: 1.5rem;
+  margin: 0 auto;
+  width: 480px;
+}
+
+h1 {
+  color: #3c3d35;
+  font-size: 200%;
+  letter-spacing: 0.2em;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1::after {
+  background-color: #3c3d35;
+  content: "";
+  display: block;
+  height: 2px;
+  margin: 0.75rem auto 2.25rem;
+  width: 6rem;
+}
+
+.table, .table--contents {
+  width: 100%;
+}
+
+.table--contents {
+  overflow: hidden;
+}
+.table--contents thead th {
+  text-align: right;
+  text-transform: uppercase;
+}
+.table--contents tbody {
+  line-height: 150%;
+}
+.table--contents tbody td:first-of-type {
+  background-size: 34px 1.5em;
+  background-position: right;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.table--contents tbody td:first-of-type::after {
+  content: "••••••••••••••••••••";
+  color: rgba(42, 44, 33, 0.75);
+  display: block;
+  font-size: 66.66667%;
+  letter-spacing: 2.5em;
+  line-height: 1.5;
+  position: absolute;
+  right: -1.5em;
+  text-align: right;
+  bottom: 0;
+  vertical-align: bottom;
+  z-index: -1;
+}
+.table--contents tbody td:first-of-type span {
+  background: #dcdace;
+  padding-right: 0.5em;
+}
+.table--contents tbody td:nth-of-type(2) {
+  text-align: right;
+}
